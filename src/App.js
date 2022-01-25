@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Signup from './Signup';
+
+// const Title = styled.h1` 
+// font-size: 1.5rem;
+// text-align: center;
+// color: #f32cd3;
+// `
+
+const Main = styled.div`
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-width: 1600px;
+  background: skyblue;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Signup />
+    </Main>
   );
 }
 
